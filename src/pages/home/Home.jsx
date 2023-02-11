@@ -1,7 +1,7 @@
 import FeaturedProperties from "../../components/FeaturedProperties/FeaturedProperties"
 import Footer from "../../components/Footer/Footer"
 
-export const home = () => {
+const home = () => {
   return (
     <div>home
       <navbar/>
@@ -18,3 +18,5 @@ export const home = () => {
     </div>
   )
 }
+
+export default home

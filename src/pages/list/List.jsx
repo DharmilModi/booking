@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import { SearchItem } from '../../components/searchItem/SearchItem';
-import "./list.scss"
+import "./List.scss"
 import Navbar from "../../components/Navbar/Navbar"
 import Header from "../../components/Header/Header"
 // import navbar
@@ -17,8 +17,8 @@ const List = () => {
 
   return (
     <div>
-   //    <Navbar/>
-     //  <Header type = 'list'/>
+     <Navbar/>
+       <Header type = 'list'/>
        <div className="listContainer">
           <div className="listWrapper">
             <div className="listSearch">

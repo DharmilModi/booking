@@ -1,6 +1,6 @@
 import "./footer.css"
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <div  className="footer">
         <div className="fLists">
@@ -45,7 +45,7 @@ export const Footer = () => {
             </ul>
 
             .fListText{
-                Copyright © ModiBooking.com
+                `Copyright © ModiBooking.com`
             }
 
             .fListItem{
@@ -55,3 +55,4 @@ export const Footer = () => {
     </div>
   )
 }
+export default Footer

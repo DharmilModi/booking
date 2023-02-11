@@ -4,8 +4,12 @@ import 'react-date-range/dist/styles.css'; // main css file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 import {format} from 'date-fns'
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBed, faCar, faMountainCity, faPerson, faPlane, faSearch, faTaxi } from "@fortawesome/free-solid-svg-icons";
+import { faCalendarDays } from "@fortawesome/free-regular-svg-icons";
 
-export const Header = () => { 
+ const Header = () => { 
    const [openDate, setOpenDate] = useState(false)
    const [date, setDate] = useState([
    {
@@ -16,14 +20,14 @@ export const Header = () => {
  ]);
 
    const [destination, setDestination] = useState("")
-   const [openOptions, setOpenOptions] = useState{false}
+   const [openOptions, setOpenOptions] = useState(false)
    const [options, setOptions] = useState({
       adult :1,
       children:1,
       room:1
 });
 
-   const handleOptions = (name,operation) => 
+   const handleOption = (name,operation) => 
       setOptions((prev) => {
          return {
             ...prev,
@@ -157,9 +161,9 @@ export const Header = () => {
                           <button className="optionCounterButton" onClick={() => handleOption("room", "i")}> + </button>
                      </div>
 
-                  </div>
+                  </div>}
                </div>
-}
+
 
                <div className="headerSearchItem">
                   <FontAwesomeIcon icon={faSearch} className = "headerIcon" /> 
@@ -174,3 +178,5 @@ export const Header = () => {
      </div>
   )
 }
+
+export default Header
