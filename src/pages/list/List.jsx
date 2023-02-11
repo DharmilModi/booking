@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import { SearchItem } from '../../components/searchItem/SearchItem';
-import "./List.scss"
+import "./List.css"
 import Navbar from "../../components/Navbar/Navbar"
 import Header from "../../components/Header/Header"
 // import navbar
@@ -32,7 +32,7 @@ const List = () => {
                 <div className="lsItem">
                   <label className='itemTitle'>Check-in-Date</label>
 
-                  // Doubt
+                  
                   {/* <span className="headerSearchText"> {'${format
                      (date[0].startDate, "MM/dd/YYYY")}'
                      to

@@ -1,15 +1,20 @@
+import Featured from "../../components/Featured/Featured"
+import PropertyList from "../../components/PropertyList/PropertyList"
 import FeaturedProperties from "../../components/FeaturedProperties/FeaturedProperties"
 import Footer from "../../components/Footer/Footer"
+import "./Home.css"
+import Header from "../../components/Header/Header"
+import Navbar from "../../components/Navbar/Navbar"
 
 const home = () => {
   return (
-    <div>home
-      <navbar/>
-      <header/>
+    <div>
+      <Navbar/>
+      <Header/>
        <div className="homeContainer">
-        <featured/>
+        <Featured/>
         <h1 className="homeTitle">Browse by property type</h1>
-        <propertyList/>
+        <PropertyList/>
         <h1 className="homeTitle">Homes Guests Love</h1>
         <FeaturedProperties/>
         <mailList/>

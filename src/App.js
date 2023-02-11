@@ -5,6 +5,7 @@ import Hotel from "./pages/hotel/Hotel"
 
 
 function App() {
+  return(
   <BrowserRouter>
     <Routes>
        <Route path="/" element={<Home/>}>
@@ -14,6 +15,6 @@ function App() {
        </Route>
        </Route>
     </Routes>
-  </BrowserRouter>
+  </BrowserRouter>)
 }
 export default App;

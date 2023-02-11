@@ -1,4 +1,4 @@
-import "./propertyList.css"
+import "./PropertyList.css"
 
 import React from 'react'
 
