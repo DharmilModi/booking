@@ -9,7 +9,7 @@ const Featured = () => {
           <img src="https://q-xx.bstatic.com/xdata/images/region/250x250/49646.jpg?k=b7f38878b9164ee38e0b99c4d4646dbea76b7bf4add8464b1aa75e4c9d0efc6e&o=" alt=""
           >
           </img><h1>Goa</h1>
-          <h2>Modi Mansion</h2>
+          <h2>Modi Mansions</h2>
         </div>
       </div>
       </div>
